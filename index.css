@@ -1,0 +1,186 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #111, #000);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main scoreboard container */
+.scoreboard {
+  text-align: center;
+  background: rgba(20, 20, 20, 0.9);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+  max-width: 850px;
+}
+
+/* Title */
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  color: #ff4040;
+  text-shadow: 0 0 10px #ff4040;
+}
+
+/* Team section */
+.teams {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Each team box */
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Team logos */
+.team-logo {
+  width: 90px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.team-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Team-specific logos */
+.bulls-logo {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg");
+}
+
+.mavericks-logo {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg");
+}
+
+/* Team names */
+.team-name {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.bulls {
+  color: #ff3030;
+}
+
+.mavericks {
+  color: #3da9fc;
+}
+
+/* Score display */
+.score {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  background: black;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 20px #444, 0 0 20px rgba(255, 255, 255, 0.2);
+  color: #f5f5f5;
+  text-shadow: 0 0 10px #fff;
+  min-width: 100px;
+}
+
+/* VS text */
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 20px;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+}
+/* Common button base */
+.buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px #fff;
+}
+
+/* +1 button - Neon Green */
+.btn-one {
+  background: #00ff9d;
+  color: #000;
+  box-shadow: 0 0 15px #00ff9d, 0 0 30px #00ff9d;
+}
+.btn-one:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 25px #00ffaa, 0 0 50px #00ffaa;
+  transform: scale(1.1);
+}
+
+/* +2 button - Neon Purple */
+.btn-two {
+  background: #a64dff;
+  box-shadow: 0 0 15px #a64dff, 0 0 30px #a64dff;
+}
+.btn-two:hover {
+  background: #b266ff;
+  box-shadow: 0 0 25px #b266ff, 0 0 50px #b266ff;
+  transform: scale(1.1);
+}
+
+/* +3 button - Neon White (cool glow) */
+.btn-three {
+  background: #ffffff;
+  color: #000;
+  box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff;
+}
+.btn-three:hover {
+  background: #f5f5f5;
+  box-shadow: 0 0 30px #ffffff, 0 0 60px #ffffff;
+  transform: scale(1.1);
+}
+
+
+/* Reset section */
+.reset-container {
+  margin-top: 30px;
+}
+
+#reset-btn {
+  background: #ff4040;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 64, 64, 0.5);
+}
+
+#reset-btn:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 64, 64, 0.8);
+}
